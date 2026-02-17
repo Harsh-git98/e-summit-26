@@ -63,7 +63,8 @@ const ContactPage = () => {
               <h2 className="font-heading text-xl font-semibold mb-6">Reach Out</h2>
               <ul className="space-y-5 text-muted-foreground mb-10">
                 <li className="flex items-center gap-3"><Mail className="text-primary" size={18} /> {CONTACT_INFO.email}</li>
-                <li className="flex items-center gap-3"><Phone className="text-primary" size={18} /> {CONTACT_INFO.phone}</li>
+                <li className="flex items-center gap-3"><Phone className="text-primary" size={18} /> {CONTACT_INFO.phone1.name}: {CONTACT_INFO.phone1.number}</li>
+                <li className="flex items-center gap-3"><Phone className="text-primary" size={18} /> {CONTACT_INFO.phone2.name}: {CONTACT_INFO.phone2.number}</li>
                 <li className="flex items-start gap-3"><MapPin className="text-primary mt-0.5 shrink-0" size={18} /> {CONTACT_INFO.address}</li>
               </ul>
 

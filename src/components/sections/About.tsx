@@ -66,13 +66,16 @@ const About = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6">
-              About <span className="text-gradient">E-Summit</span>
+              About <span className="text-gradient">E-Summit'26</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              E-Summit is the flagship entrepreneurship summit of IIEST Shibpur, bringing together the brightest minds in technology, business, and innovation. Our mission is to empower the next generation of entrepreneurs — with a special focus on women in tech and the AI revolution.
+              E-Summit'26 is the annual flagship event of the Entrepreneurship Development Cell, IIEST Shibpur, aimed at fostering entrepreneurial initiatives among students and aspiring entrepreneurs. It brings together 10,000+ attendees, 50+ startups & investors, and 20+ industry leaders.
             </p>
-            <p className="text-muted-foreground leading-relaxed mb-8">
-              From high-stakes competitions to inspiring keynotes, panel discussions, and a creators conclave — E-Summit is where ideas meet opportunity.
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              From high-stakes competitions like Envisage and Hackstart, to keynotes, panel discussions, a creators conclave, and the Startup & Drone/Auto Expo — E-Summit is where ideas meet opportunity.
+            </p>
+            <p className="text-muted-foreground/70 leading-relaxed text-sm mb-8">
+              IIEST Shibpur, established in 1856, is one of the oldest and most prestigious technical institutions in Asia. The Entrepreneurship Development Cell (EDC) works to nurture innovation and startup culture on campus.
             </p>
 
             <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-primary-foreground gap-2">

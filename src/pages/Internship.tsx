@@ -1,8 +1,8 @@
 import Layout from "@/components/Layout";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { FAIR_COMPANIES, INTERNSHIP_STEPS } from "@/data/constants";
-import { Building2, CheckCircle } from "lucide-react";
+import { FAIR_COMPANIES, INTERNSHIP_STEPS, EXPO_BENEFITS } from "@/data/constants";
+import { Building2, Sparkles } from "lucide-react";
 
 const InternshipPage = () => {
   const ref = useRef(null);
@@ -19,7 +19,7 @@ const InternshipPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <span className="text-gradient">Internship Fair</span>
+            <span className="text-gradient">Fair & Expo</span>
           </motion.h1>
           <motion.p
             className="text-muted-foreground max-w-xl mx-auto text-lg"
@@ -27,8 +27,32 @@ const InternshipPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            Meet top companies, ace your interviews, and land your dream internship.
+            Internship Fair, Startup Expo, and Drone & Auto Expo — meet top companies, showcase innovation, and land your dream opportunity.
           </motion.p>
+        </div>
+      </section>
+
+      {/* Expo Benefits */}
+      <section className="py-12 px-4">
+        <div className="container mx-auto">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold text-center mb-8">
+            What to <span className="text-gradient">Expect</span>
+          </h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            {EXPO_BENEFITS.map((benefit, i) => (
+              <motion.div
+                key={benefit}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: i * 0.08 }}
+                className="glass rounded-lg px-5 py-3 flex items-center gap-2 hover:border-primary/30 transition-colors"
+              >
+                <Sparkles size={14} className="text-secondary" />
+                <span className="text-sm font-medium">{benefit}</span>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
