@@ -67,12 +67,12 @@ export const PAST_SPONSORS = [
 
 // ── Competitions ──
 export const COMPETITIONS = [
-  { title: "Envisage", description: "The flagship B-Plan competition — present your startup idea to a panel of VCs and industry experts. Top ideas win funding and mentorship.", icon: Brain, team: "Team of 2-4" },
-  { title: "Disrupt", description: "A high-stakes auction game where teams compete strategically to build the best portfolio of startup assets.", icon: Gavel, team: "Team of 2-4" },
-  { title: "QR Hunt", description: "A thrilling knowledge hunt through the entrepreneurial world — decode clues, scan QR codes, and race to the finish.", icon: Search, team: "Team of 2-3" },
-  { title: "Hackstart", description: "A buildathon challenge — ideate, prototype, and present a working solution to real-world problems within a time limit.", icon: Wrench, team: "Team of 3-5" },
-  { title: "Build With US", description: "The ultimate branding challenge — create a complete brand identity from scratch. Logo, tagline, pitch deck — all in 24 hours.", icon: Palette, team: "Team of 2-3" },
-  { title: "Entrivia", description: "Test your knowledge of entrepreneurship, startups, and technology in this fast-paced entrepreneurship quiz.", icon: HelpCircle, team: "Individual" },
+  { title: "Envisage", description: "The flagship B-Plan competition — present your startup idea to a panel of VCs and industry experts. Top ideas win funding and mentorship.", icon: Brain, team: "Team of 2-4", features: ["B-Plan Pitch", "VC Panel Judging", "Funding & Mentorship", "Team of 2-4"] },
+  { title: "Disrupt", description: "A high-stakes auction game where teams compete strategically to build the best portfolio of startup assets.", icon: Gavel, team: "Team of 2-4", features: ["Strategic Auction", "Portfolio Building", "High-Stakes Rounds", "Team of 2-4"] },
+  { title: "QR Hunt", description: "A thrilling knowledge hunt through the entrepreneurial world — decode clues, scan QR codes, and race to the finish.", icon: Search, team: "Team of 2-3", features: ["QR Code Clues", "Entrepreneurship Trivia", "Campus-Wide Hunt", "Team of 2-3"] },
+  { title: "Hackstart", description: "A buildathon challenge — ideate, prototype, and present a working solution to real-world problems within a time limit.", icon: Wrench, team: "Team of 3-5", features: ["Rapid Prototyping", "Real-World Problems", "Time-Bound Build", "Team of 3-5"] },
+  { title: "Build With US", description: "The ultimate branding challenge — create a complete brand identity from scratch. Logo, tagline, pitch deck — all in 24 hours.", icon: Palette, team: "Team of 2-3", features: ["Brand Identity", "Logo & Tagline", "Pitch Deck", "24-Hour Sprint"] },
+  { title: "Entrivia", description: "Test your knowledge of entrepreneurship, startups, and technology in this fast-paced entrepreneurship quiz.", icon: HelpCircle, team: "Individual", features: ["Quick-Fire Rounds", "Startup Knowledge", "Tech & Business", "Individual Event"] },
 ];
 
 // ── Networking Events ──
