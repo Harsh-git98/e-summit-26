@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, FileText } from "lucide-react";
 import ParticleCanvas from "@/components/ParticleCanvas";
-
+import logo from "@/assets/logo-esumm1.png";
 const TARGET_DATE = new Date("2026-03-01T00:00:00").getTime();
 
 const useCountdown = () => {
@@ -68,11 +68,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="text-foreground">E-</span>
-            <span className="text-gradient">Summit</span>
-            <br />
-            <span className="text-foreground">2026</span>
-          </motion.h1>
+            <img src={logo} alt="E-Summit 2026" className="h-24 md:h-24" />
+           </motion.h1>
 
           <motion.p
             className="mt-4 text-lg md:text-xl text-muted-foreground/80 max-w-lg mx-auto lg:mx-0"

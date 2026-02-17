@@ -15,9 +15,9 @@ export const NAV_LINKS = [
 
 // ── About Stats ──
 export const STATS = [
-  { label: "Attendees", value: 10000, suffix: "+" },
+  { label: "Attendees", value: 7000, suffix: "+" },
   { label: "Startups & Investors", value: 50, suffix: "+" },
-  { label: "Speakers", value: 20, suffix: "+" },
+  { label: "Speakers", value: 10, suffix: "+" },
 ];
 
 // ── Bento Grid Tracks ──
