@@ -1,52 +1,46 @@
 
 
-# Replace Competition Cards with Flip Cards
+# Redesign Hero Section Layout with Countdown Timer
 
 ## Overview
-Replace the current flat glassmorphic competition cards on `/competitions` with the interactive `CardFlip` component. Each card will show the competition icon, title, and team size on the front, then flip on hover to reveal the full description and key features.
+Restructure the hero section from centered layout to a **split two-column layout** matching the reference image: text content left-aligned on the left, a glassmorphic countdown timer on the right. Add a live countdown to March 2026.
 
-## Changes
+## Layout Changes
 
-### 1. Create `src/components/ui/flip-card.tsx`
-- Add the `CardFlip` component adapted from the provided code
-- Adjust the component to accept the competition data shape: `title`, `subtitle` (team size), `description`, `features` (extracted from description), and `color`
-- Remove the "Start Building" CTA text and replace with competition-relevant text like "Learn More"
-- Ensure the styling aligns with the existing dark theme (void black background, neon blue/magenta accents)
+**Current:** Centered text, single "Explore" button
+**New:** Two-column split layout (left: text + buttons, right: countdown timer card)
 
-### 2. Update `src/pages/Competitions.tsx`
-- Replace the current glassmorphic card grid with `CardFlip` components
-- Map each competition from `COMPETITIONS` data to a flip card, passing:
-  - `title` = competition name (e.g., "Envisage")
-  - `subtitle` = team info (e.g., "Team of 2-4")
-  - `description` = the competition description text
-  - `features` = short bullet-point features derived from each competition
-  - `color` = alternate between neon blue (#4169e1) and magenta (#d946ef) for visual variety
-- Keep the hero banner section unchanged
-- Maintain the responsive grid layout (1 col mobile, 2 col md, 3 col lg)
-- Keep Framer Motion staggered entrance animations wrapping each card
+### Left Column
+- "COMING SOON" badge (top-left, matching current primary color styling)
+- Large title: "E-Summit" with "Summit" in primary blue gradient, "2026" on second line in white
+- Subtitle: "Where Ideas Become Startups" (or keep "Empowering Women & AI")
+- Org line: "IIEST SHIBPUR | Entrepreneurship Development Cell"
+- Two buttons side by side:
+  - "Explore Events" (filled primary gradient, with arrow icon)
+  - "View Brochure" (outline/glass style, with file icon)
 
-### 3. Update `src/data/constants.ts`
-- Add a `features` array to each competition entry (3-4 short feature strings per competition) to populate the flip card back, e.g.:
-  - Envisage: ["B-Plan Pitch", "VC Panel Judging", "Funding & Mentorship", "Team of 2-4"]
-  - Disrupt: ["Strategic Auction", "Portfolio Building", "High-Stakes Rounds", "Team of 2-4"]
-  - etc.
+### Right Column
+- Glassmorphic card with "TIME TO LAUNCH" header in primary color
+- Four flip-clock style digit boxes: Days, Hours, Mins, Secs
+- Each box: dark glass background with large neon-blue numbers, label underneath
+- Colon separators between boxes
+- Live countdown using `useState` + `useEffect` with `setInterval` targeting March 1, 2026
+
+### Responsive Behavior
+- Desktop (lg+): two columns side by side
+- Tablet/Mobile: stacked -- text on top, countdown below, both centered
 
 ## Technical Details
 
-**No new dependencies needed** -- `lucide-react` is already installed.
+**File to modify:** `src/components/sections/Hero.tsx`
 
-**Files to create:**
-- `src/components/ui/flip-card.tsx`
+- Add `useState` and `useEffect` imports from React
+- Create countdown logic: calculate days/hours/mins/secs from `Date.now()` to target date (March 1, 2026)
+- Update interval every second
+- Change outer container from `text-center` to a flex row with `items-center justify-between`
+- Left div: left-aligned text with staggered Framer Motion animations (keep existing)
+- Right div: glassmorphic countdown card with 4 digit boxes
+- Keep `ParticleCanvas` and gradient orbs as background
+- Style countdown boxes with `glass` utility class, primary color numbers
+- Add `ArrowRight` and `FileText` icons from lucide-react for buttons
 
-**Files to modify:**
-- `src/pages/Competitions.tsx` -- swap card rendering to use `CardFlip`
-- `src/data/constants.ts` -- add `features` arrays to competition entries
-
-**Component prop mapping:**
-```
-COMPETITIONS[i].title       -> CardFlip title
-COMPETITIONS[i].team        -> CardFlip subtitle
-COMPETITIONS[i].description -> CardFlip description
-COMPETITIONS[i].features    -> CardFlip features (new field)
-color                       -> alternating #4169e1 / #d946ef
-```
