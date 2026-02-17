@@ -1,7 +1,7 @@
 'use client';
 
 import { cn } from '@/lib/utils';
-import { ArrowRight, Code2, Copy, Rocket, Zap } from 'lucide-react';
+import { ArrowRight, Code2, Copy, Rocket, Zap, type LucideIcon } from 'lucide-react';
 import { useState } from 'react';
 
 export interface CardFlipProps {
@@ -10,6 +10,7 @@ export interface CardFlipProps {
   description?: string;
   features?: string[];
   color?: string;
+  icon?: LucideIcon;
 }
 
 export default function CardFlip({
@@ -18,6 +19,7 @@ export default function CardFlip({
   description = 'An exciting competition to test your skills.',
   features = ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4'],
   color = '#4169e1',
+  icon: Icon = Rocket,
 }: CardFlipProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 
@@ -66,7 +68,7 @@ export default function CardFlip({
                   className="w-16 h-16 rounded-xl flex items-center justify-center"
                   style={{ background: `${color}20`, border: `1px solid ${color}40` }}
                 >
-                  <Rocket className="w-8 h-8" style={{ color }} />
+                  <Icon className="w-8 h-8" style={{ color }} />
                 </div>
               </div>
             </div>
@@ -106,7 +108,7 @@ export default function CardFlip({
                   className="w-8 h-8 rounded-lg flex items-center justify-center"
                   style={{ background: `${color}20`, border: `1px solid ${color}40` }}
                 >
-                  <Rocket className="w-4 h-4" style={{ color }} />
+                  <Icon className="w-4 h-4" style={{ color }} />
                 </div>
                 <h3 className="text-lg font-heading font-bold text-foreground">{title}</h3>
               </div>

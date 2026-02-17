@@ -51,6 +51,7 @@ const CompetitionsPage = () => {
                 description={comp.description}
                 features={comp.features}
                 color={CARD_COLORS[i % 2]}
+                icon={comp.icon}
               />
             </motion.div>
           ))}
