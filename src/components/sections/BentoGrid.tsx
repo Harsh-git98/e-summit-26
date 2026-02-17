@@ -24,7 +24,7 @@ const BentoGrid = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 auto-rows-[160px] sm:auto-rows-[180px] md:auto-rows-[200px] lg:auto-rows-[220px]">
+        <div className="hidden md:grid grid-cols-3 gap-3 sm:gap-4 auto-rows-[200px] lg:auto-rows-[220px]">
           {TRACKS.map((track, i) => (
             <motion.div
               key={track.title}
@@ -35,33 +35,62 @@ const BentoGrid = () => {
               whileHover={{ scale: 1.02 }}
             >
               <Link
-                to={track.href}
-                className="glass rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 h-full flex flex-col justify-between relative overflow-hidden hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all duration-500 block"
+          to={track.href}
+          className="glass rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 h-full flex flex-col justify-between relative overflow-hidden hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all duration-500 block"
               >
-                {/* Hover glow */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <motion.div 
-                  className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                  initial={false}
-                />
+          {/* Hover glow */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <motion.div 
+            className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            initial={false}
+          />
 
-                <div className="relative z-10">
-                  <motion.div
-                    whileHover={{ rotate: [0, -10, 10, 0], scale: 1.1 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <track.icon className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 text-primary mb-2 sm:mb-3 group-hover:text-secondary transition-colors duration-300" />
-                  </motion.div>
-                  <h3 className="font-heading text-base sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2">{track.title}</h3>
-                </div>
-                <p className="relative z-10 text-xs sm:text-sm text-muted-foreground leading-relaxed">{track.description}</p>
+          <div className="relative z-10">
+            <motion.div
+              whileHover={{ rotate: [0, -10, 10, 0], scale: 1.1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <track.icon className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 text-primary mb-2 sm:mb-3 group-hover:text-secondary transition-colors duration-300" />
+            </motion.div>
+            <h3 className="font-heading text-base sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2">{track.title}</h3>
+          </div>
+          <p className="relative z-10 text-xs sm:text-sm text-muted-foreground leading-relaxed">{track.description}</p>
               </Link>
             </motion.div>
           ))}
         </div>
-      </div>
-    </section>
-  );
-};
 
-export default BentoGrid;
+        <div className="md:hidden grid grid-cols-1 gap-3 sm:gap-4">
+          {TRACKS.map((track, i) => (
+            <motion.div
+              key={track.title}
+              initial={{ opacity: 0, y: 30 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: i * 0.1, type: "spring", stiffness: 100 }}
+              className="group"
+              whileHover={{ scale: 1.02 }}
+            >
+              <Link
+          to={track.href}
+          className="glass rounded-xl p-4 sm:p-5 py-5 flex flex-col justify-between relative overflow-hidden hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all duration-500 block"
+              >
+          <div className="relative z-10">
+            <motion.div
+              whileHover={{ rotate: [0, -10, 10, 0], scale: 1.1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <track.icon className="w-7 h-7 sm:w-8 sm:h-8 text-primary mb-2 sm:mb-3 group-hover:text-secondary transition-colors duration-300" />
+            </motion.div>
+            <h3 className="font-heading text-base sm:text-lg font-semibold mb-1 sm:mb-2">{track.title}</h3>
+          </div>
+          <p className="relative z-10 text-xs sm:text-sm text-muted-foreground leading-relaxed">{track.description}</p>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
+            </div>
+          </section>
+        );
+      };
+
+      export default BentoGrid;

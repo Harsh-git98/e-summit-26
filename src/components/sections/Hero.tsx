@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowRight, FileText } from "lucide-react";
 import ParticleCanvas from "@/components/ParticleCanvas";
 import logo from "@/assets/logo-esumm1.png";
-const TARGET_DATE = new Date("2026-03-01T00:00:00").getTime();
+const TARGET_DATE = new Date("2027-03-01T00:00:00").getTime();
 
 const useCountdown = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, mins: 0, secs: 0 });
