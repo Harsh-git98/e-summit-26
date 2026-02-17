@@ -1,0 +1,18 @@
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const Layout = ({ children }: LayoutProps) => {
+  return (
+    <div className="min-h-screen bg-background text-foreground">
+      <Navbar />
+      <main className="pt-16 md:pt-20">{children}</main>
+      <Footer />
+    </div>
+  );
+};
+
+export default Layout;
