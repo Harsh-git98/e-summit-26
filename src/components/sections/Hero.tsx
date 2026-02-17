@@ -18,7 +18,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <Badge className="mb-6 px-4 py-1.5 text-sm bg-primary/20 text-primary border-primary/30 animate-pulse-glow">
-            Coming Soon
+            March 2026
           </Badge>
         </motion.div>
 
@@ -28,7 +28,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <span className="text-gradient">E-SUMMIT</span>
+          <span className="text-gradient">E-SUMMIT'26</span>
         </motion.h1>
 
         <motion.p
@@ -37,7 +37,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          IIEST SHIBPUR
+          IIEST SHIBPUR | Entrepreneurship Development Cell
         </motion.p>
 
         <motion.p

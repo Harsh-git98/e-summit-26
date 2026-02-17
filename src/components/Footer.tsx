@@ -9,9 +9,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <h3 className="font-heading text-2xl font-bold text-gradient mb-4">E-SUMMIT</h3>
+            <h3 className="font-heading text-2xl font-bold text-gradient mb-2">E-SUMMIT'26</h3>
+            <p className="text-xs text-primary/70 font-medium mb-3">Entrepreneurship Development Cell</p>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              The flagship entrepreneurship summit of IIEST Shibpur — empowering innovation, women in tech, and the AI revolution.
+              The annual flagship event of EDC, IIEST Shibpur — fostering entrepreneurial initiatives, empowering women in tech, and driving the AI revolution.
             </p>
           </div>
 
@@ -34,7 +35,8 @@ const Footer = () => {
             <h4 className="font-heading font-semibold mb-4">Contact</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-center gap-2"><Mail size={14} /> {CONTACT_INFO.email}</li>
-              <li className="flex items-center gap-2"><Phone size={14} /> {CONTACT_INFO.phone}</li>
+              <li className="flex items-center gap-2"><Phone size={14} /> {CONTACT_INFO.phone1.name}: {CONTACT_INFO.phone1.number}</li>
+              <li className="flex items-center gap-2"><Phone size={14} /> {CONTACT_INFO.phone2.name}: {CONTACT_INFO.phone2.number}</li>
               <li className="flex items-start gap-2"><MapPin size={14} className="mt-0.5 shrink-0" /> {CONTACT_INFO.address}</li>
             </ul>
           </div>
@@ -56,7 +58,7 @@ const Footer = () => {
               </a>
             ))}
           </div>
-          <p className="text-xs text-muted-foreground">© 2026 E-Summit IIEST Shibpur. All rights reserved.</p>
+          <p className="text-xs text-muted-foreground">© 2026 E-Summit'26 | EDC, IIEST Shibpur. All rights reserved.</p>
         </div>
       </div>
     </footer>
