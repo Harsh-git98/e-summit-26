@@ -2,6 +2,9 @@ import Layout from "@/components/Layout";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { COMPETITIONS } from "@/data/constants";
+import CardFlip from "@/components/ui/flip-card";
+
+const CARD_COLORS = ["#4169e1", "#d946ef"];
 
 const CompetitionsPage = () => {
   const ref = useRef(null);
@@ -41,17 +44,14 @@ const CompetitionsPage = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="glass rounded-2xl p-6 group hover:border-primary/40 transition-all duration-500 relative overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="relative z-10">
-                <comp.icon className="w-10 h-10 text-primary mb-4 group-hover:text-secondary transition-colors" />
-                <h3 className="font-heading text-xl font-semibold mb-2">{comp.title}</h3>
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{comp.description}</p>
-                <span className="text-xs font-medium px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
-                  {comp.team}
-                </span>
-              </div>
+              <CardFlip
+                title={comp.title}
+                subtitle={comp.team}
+                description={comp.description}
+                features={comp.features}
+                color={CARD_COLORS[i % 2]}
+              />
             </motion.div>
           ))}
         </div>
