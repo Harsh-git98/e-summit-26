@@ -476,7 +476,7 @@ export const TEAM_STRUCTURE = [
   {
     role: "Speaker Acquisition and Management",
     members: {
-      "4th": [],
+      "4th": [  { name: "Amritesh Kumar", dept: "IT" },],
       "3rd": [
         { name: "Yasharth Shukla", dept: "CST" },
         { name: "Shivintya", dept: "ME" },
