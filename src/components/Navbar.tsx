@@ -32,23 +32,17 @@ const Navbar = () => {
             to="/"
             className="relative flex flex-col items-start group p-1 rounded-xl overflow-hidden"
           >
-            {/* Intense light-blue blurred glow behind logo */}
-            <motion.div
-              className="pointer-events-none absolute inset-0 -z-10"
-              initial={{ opacity: 0.8 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6 }}
-            >
-              <div className="absolute inset-[-40%] bg-[radial-gradient(circle_at_center,rgba(240, 245, 247, 0.9),rgba(175, 184, 197, 0.99)_65%)] blur-3xl opacity-90 group-hover:opacity-100 transition-opacity" />
-            </motion.div>
-
-            <motion.img
-              src={logo}
-              alt="E-Summit 2026"
-              className="h-8 md:h-10 transition-transform duration-300 group-hover:scale-105"
-              whileHover={{ rotate: [0, -5, 5, 0] }}
-              transition={{ duration: 0.5 }}
-            />
+           <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6 }}
+            className="flex justify-center lg:justify-start"
+          >
+            <div className="relative">
+              <div className="absolute inset-0 bg-primary/20 blur-2xl rounded-full" />
+              <img src={logo} className="relative h-12 md:h-12 brightness-250 contrast-250" />
+            </div>
+          </motion.div>
             {/* <p className="ml-4 pt-1 text-xs font-medium text-purple-600">IIEST Shibpur</p> */}
           </Link>
 
