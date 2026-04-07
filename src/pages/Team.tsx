@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Users, User } from "lucide-react";
+import { Users, User, Linkedin } from "lucide-react";
 import { TEAM_STRUCTURE } from "@/data/constants";
 import { Badge } from "@/components/ui/badge";
 import ParticleCanvas from "@/components/ParticleCanvas";
@@ -118,32 +118,39 @@ const TeamPage = () => {
                     </div>
                   </div>
 
-                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                  <div className="grid sm:grid-cols-3 lg:grid-cols-4 gap-3">
                     {members.map((member, index) => (
                       <motion.div
                         key={`${member.name}-${member.year}`}
                         initial={{ opacity: 0, y: 8 }}
                         animate={inView ? { opacity: 1, y: 0 } : {}}
                         transition={{ delay: 0.04 * index }}
-                        className="flex items-center gap-3 rounded-lg border border-primary/10 bg-card/40 px-3 py-2.5 hover:border-primary/40 hover:bg-primary/5 transition-colors"
+                        className="flex flex-col items-center justify-between rounded-xl border border-primary/10 bg-card/40 px-3 py-4 hover:border-primary/40 hover:bg-primary/5 transition-colors"
                       >
-                        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10">
-                          <User className="w-4 h-4 text-primary" />
-                        </div>
-                        <div className="min-w-0 flex-1">
-                          <p className="text-xs md:text-sm font-semibold text-foreground truncate">
-                            {member.name}
-                          </p>
-                          <div className="flex flex-wrap items-center gap-1 mt-0.5">
-                            {member.dept && (
-                              <span className="text-[10px] md:text-[11px] text-muted-foreground">
-                                {member.dept}
-                              </span>
-                            )}
-                            <span className="text-[9px] md:text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
-                              {member.year}
-                            </span>
+                        <div className="flex flex-col items-center gap-3 w-full">
+                          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                            <User className="w-full h-full text-primary" />
                           </div>
+                          <div className="min-w-0 text-center">
+                            <p className="text-xs md:text-sm font-semibold text-foreground truncate">
+                              {member.name}
+                            </p>
+                            <div className="flex items-center justify-center gap-2 mt-1">
+                              {member.dept && (
+                                <span className="text-[10px] md:text-[11px] text-muted-foreground">
+                                  {member.dept}
+                                </span>
+                              )}
+                              <span className="text-[9px] md:text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
+                                {member.year}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="mt-2 flex items-center justify-center w-full">
+                          <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-primary/5 text-primary/80 border border-primary/20">
+                            <Linkedin className="w-3.5 h-3.5" />
+                          </span>
                         </div>
                       </motion.div>
                     ))}
