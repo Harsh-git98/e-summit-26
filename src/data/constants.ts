@@ -174,7 +174,7 @@ export const COMPETITIONS = [
     mainImage:
       "/creatorCompetition.png",
     bannerImage:
-      "/campus-creator-banner.png"
+      "/Banners/Campus_Creator_Banner.jpeg"
   },
 
   {
