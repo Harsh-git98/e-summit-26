@@ -7,7 +7,7 @@ import {
 } from "framer-motion";
 import { ArrowRight, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
-import ParticleCanvas from "@/components/ParticleCanvas";
+import ShardBackground from "@/components/ShardBackground";
 import logo from "@/assets/logo-esumm1.png";
 
 const TARGET_DATE = new Date("2026-04-18T00:00:00").getTime();
@@ -62,8 +62,9 @@ const MagneticButton = ({ children }: any) => {
     <motion.div
       onMouseMove={handleMouseMove}
       onMouseLeave={reset}
+      whileHover={{ scale: 1.02 }}
       style={{ x: springX, y: springY }}
-      className="inline-block"
+      className="inline-block z-20 relative"
     >
       {children}
     </motion.div>
@@ -72,17 +73,17 @@ const MagneticButton = ({ children }: any) => {
 
 const CountdownBox = ({ value, label }: { value: number; label: string }) => (
   <div className="text-center">
-    <div className="text-3xl sm:text-4xl md:text-6xl font-bold text-primary drop-shadow-[0_0_15px_rgba(30,144,255,0.4)]">
+    <div className="text-2xl sm:text-3xl md:text-5xl font-bold text-white drop-shadow-[0_0_15px_rgba(168,85,247,0.4)]">
       {String(value).padStart(2, "0")}
     </div>
-    <div className="text-[10px] md:text-xs text-muted-foreground uppercase tracking-widest mt-1 opacity-70">
+    <div className="text-[9px] md:text-[10px] text-purple-200 uppercase tracking-widest mt-1 opacity-70">
       {label}
     </div>
   </div>
 );
 
 const Separator = () => (
-  <div className="text-2xl md:text-4xl text-primary font-bold opacity-30 mt-[-1rem] md:mt-[-1.5rem]">
+  <div className="text-xl md:text-3xl text-purple-400 font-bold opacity-40 mt-[-1rem] md:mt-[-1.5rem]">
     :
   </div>
 );
@@ -90,17 +91,21 @@ const Separator = () => (
 const Hero = () => {
   const { days, hours, mins, secs } = useCountdown();
 
-  /* 🎯 Mouse Parallax */
+  /* 🎯 Mouse Parallax & Spotlight */
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
   const move = (e: any) => {
-    mouseX.set(e.clientX);
-    mouseY.set(e.clientY);
+    const rect = e.currentTarget.getBoundingClientRect();
+    mouseX.set(e.clientX - rect.left);
+    mouseY.set(e.clientY - rect.top);
   };
 
   const rotateX = useTransform(mouseY, [0, 800], [10, -10]);
   const rotateY = useTransform(mouseX, [0, 1200], [-10, 10]);
+
+  const spotlightX = useTransform(mouseX, (x) => x - 400);
+  const spotlightY = useTransform(mouseY, (y) => y - 400);
 
   return (
     <section
@@ -108,17 +113,8 @@ const Hero = () => {
       className="relative min-h-screen flex items-center overflow-hidden px-4 py-24 sm:py-28 md:py-0"
     >
            
-      {/* 🌊 Animated Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-[#050510] to-black animate-[pulse_8s_ease-in-out_infinite]" />
-
-      {/* ⚡ Neural glow lines */}
-      <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,rgba(0,255,255,0.15),transparent_60%)]" />
-
-      {/* PARTICLES */}
-      <ParticleCanvas />
-
-      {/* GRID */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:60px_60px]" />
+      {/* 3D SHARD BACKGROUND */}
+      <ShardBackground />
 
       <motion.div
         style={{ rotateX, rotateY }}
@@ -132,33 +128,36 @@ const Hero = () => {
             initial={{ opacity: 0, y: 80 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-2xl sm:text-4xl md:text-7xl font-extrabold leading-tight"
+            className="text-4xl sm:text-6xl md:text-8xl font-extrabold leading-tight tracking-tight flex flex-col items-center lg:items-start"
           >
-            <div className="mt-12">
-            <div className="relative inline-block">
-               <img src={logo} className="relative w-56 md:w-72 lg:w-80 max-w-full mx-auto lg:mx-0" />
+            <div className="mt-8 mb-4 relative w-72 md:w-96 lg:w-[450px] max-w-full">
+               <img src={logo} className="w-full h-auto drop-shadow-[0_0_20px_rgba(168,85,247,0.5)]" alt="Scintillations E-Summit 2026 Logo" />
             </div>
-          </div>
-            <h3 className=" text-xl sm:text-2xl bg-gradient-to-r from-primary via-white to-secondary bg-clip-text text-transparent">
-              No Noise,
-            </h3>
-            <h3 className=" text-2xl sm:text-3xl text-white">Just Entrepreneurship</h3>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="mt-6 text-lg text-muted-foreground max-w-xl"
+            className="mt-4 text-xl sm:text-3xl font-bold max-w-2xl mx-auto lg:mx-0 bg-gradient-to-r from-purple-200 via-purple-100 to-purple-300 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(168,85,247,0.3)]"
           >
-            Organised By Entrepreneurship Development Cell.
+            Where Ideas Explode Into Reality
+          </motion.p>
+          
+          <motion.p
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="mt-6 text-sm sm:text-base text-purple-200/60 max-w-xl mx-auto lg:mx-0 font-light tracking-wide uppercase"
+          >
+            Organised By Entrepreneurship Development Cell, IIEST Shibpur
           </motion.p>
 
           {/* CTA */}
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <div className="mt-12 flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
             <MagneticButton>
-              <Link to="/networking" className="px-5 py-2.5 sm:px-8 sm:py-4 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-semibold text-sm sm:text-base flex items-center gap-2 shadow-2xl w-full sm:w-auto justify-center">
-                Explore Events <ArrowRight />
+              <Link to="/networking" className="px-8 py-4 sm:px-10 sm:py-5 rounded-full bg-gradient-to-r from-primary to-purple-600 hover:from-purple-500 hover:to-primary transition-all duration-500 text-white font-bold text-lg sm:text-xl flex items-center gap-3 shadow-[0_0_30px_rgba(168,85,247,0.6)] w-full sm:w-auto justify-center uppercase tracking-wide">
+                Register Now <ArrowRight size={24} />
               </Link>
             </MagneticButton>
 
@@ -167,35 +166,35 @@ const Hero = () => {
                 href="https://drive.google.com/file/d/1bVsGNAGmtyfXE9KeARTVpyecteWLZq9e/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-2.5 sm:px-8 sm:py-4 rounded-xl border border-white/20 backdrop-blur-xl hover:bg-white/10 flex items-center gap-2 w-full sm:w-auto justify-center text-sm sm:text-base cursor-pointer"
+                className="px-8 py-4 sm:px-10 sm:py-5 rounded-full border-2 border-white/20 backdrop-blur-md hover:bg-white/10 hover:border-white/40 flex items-center gap-3 w-full sm:w-auto justify-center text-lg sm:text-xl font-medium transition-all duration-300 text-white/90"
               >
-                <FileText /> Brochure
+                <FileText size={24} /> Brochure
               </a>
             </MagneticButton>
           </div>
-
-          {/* LOGO FIX */}
           
         </div>
 
         {/* RIGHT */}
-        <div className="relative flex justify-center">
-
-          {/* ROTATING ENERGY RING */}
-          <motion.div
-            animate={{ rotate: 360 }}
-            transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
-            className="absolute w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px] border border-primary/20 rounded-full"
-          />
+        <div className="relative flex justify-center items-center pointer-events-none pt-20 lg:pt-0">
 
           {/* COUNTDOWN */}
-          <div className="relative backdrop-blur-2xl bg-white/5 border border-white/10 rounded-3xl p-6 sm:p-10 shadow-[0_0_60px_rgba(0,0,0,0.6)]">
+          <div 
+            className="relative z-20 pointer-events-auto rounded-[32px] p-5 sm:p-8 scale-90 sm:scale-100"
+            style={{
+              background: 'rgba(15, 23, 42, 0.4)',
+              backdropFilter: 'blur(16px)',
+              WebkitBackdropFilter: 'blur(16px)',
+              border: '1px solid rgba(168, 85, 247, 0.2)',
+              boxShadow: '0 20px 40px -12px rgba(0, 0, 0, 0.8)',
+            }}
+          >
 
-            <h3 className="text-center text-primary tracking-[0.3em] font-medium text-xs md:text-sm mb-8 opacity-80">
+            <h3 className="text-center text-purple-300 tracking-[0.3em] font-medium text-[10px] md:text-xs mb-6 opacity-80">
               LAUNCHING IN
             </h3>
 
-            <div className="flex gap-2 sm:gap-4 md:gap-6 justify-center items-center">
+            <div className="flex gap-2 sm:gap-4 md:gap-5 justify-center items-center">
               <CountdownBox value={days} label="Days" />
               <Separator />
               <CountdownBox value={hours} label="Hours" />
