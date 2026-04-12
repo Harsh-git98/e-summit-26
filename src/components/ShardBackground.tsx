@@ -1,7 +1,31 @@
+import { useEffect, useRef } from "react";
+
 export default function ShardBackground() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    // Browsers often suspend video playback when the tab loses focus to save resources.
+    // This explicitly tells the video to resume playing when the user returns to the tab.
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "visible" && videoRef.current) {
+        videoRef.current.play().catch(console.error);
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    
+    // Initial play attempt just in case autoplay is blocked initially
+    if (videoRef.current) {
+      videoRef.current.play().catch(console.error);
+    }
+
+    return () => document.removeEventListener("visibilitychange", handleVisibilityChange);
+  }, []);
+
   return (
     <div className="absolute inset-0 z-0 bg-[#020617] overflow-hidden">
       <video
+        ref={videoRef}
         autoPlay
         loop
         muted
