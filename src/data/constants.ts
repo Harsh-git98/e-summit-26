@@ -158,28 +158,7 @@ export const COMPETITIONS = [
     rulesDescription:
       "Campus Creator Championship is designed to evaluate participants on creativity, storytelling, and their ability to generate engagement under time constraints using live event environments.\n\nEvent Structure:\n1. Briefing Session: Participants will be briefed regarding rules, themes, and submission process.\n2. Content Creation Phase: Participants will create content during the event. All footage must be captured within E-Summit premises. Editing must be completed within the event duration.\n3. Submission Guidelines: Content must be uploaded as a Reel by the communicated deadline.\n\nRules & Regulations:\n• Content must be original and created during the event.\n• Use of pre-recorded or previously published content is strictly prohibited.\n• Any form of plagiarism or copyright violation will lead to disqualification.\n• The decision of the judging panel will be final and binding.",
 
-    submission: [
-      "Content must be uploaded on Instagram as a Reel",
-      "Integrate the brand mention or expo company assigned to you in the storyline",
-      "Tag the official E-Summit Instagram handle",
-      "Tag all designated sponsor handles (mandatory)",
-      "Use the designated event hashtag",
-      "Submission deadline will be communicated during the briefing"
-    ],
 
-    evaluationCriteria: [
-      "Engagement Metrics: Views, likes, shares, and overall reach",
-      "Creativity: Originality and uniqueness of the concept",
-      "Brand Integration: Inclusion and effective representation of sponsors/expo stalls",
-      "Relevance: Alignment with event theme and environment",
-      "Execution Quality: Editing, storytelling, and presentation"
-    ],
-
-    constraints: [
-      "All footage must be captured within the E-Summit premises",
-      "Editing must be completed within the event duration",
-      "Entries submitted after the deadline will not be considered"
-    ],
 
     mainImage:
       "/creatorCompetition.png",
@@ -207,28 +186,11 @@ export const COMPETITIONS = [
       "Actionable solution proposals"
     ],
 
-    submission: [
-      "Problem Understanding & Context - Clear articulation of the problem and key challenges",
-      "Market & Industry Analysis - Market overview, trends, and competitor landscape",
-      "Customer Segmentation & Insights - Target users and key pain points",
-      "Root Cause Analysis - Identifying underlying issues driving the problem",
-      "Solution Strategy - Clear, actionable recommendations",
-      "Implementation Plan - Strategic roadmap with execution steps",
-      "Business Model & Impact - Revenue model, expected outcomes",
-      "Risk & Mitigation - Potential challenges and contingency plans"
-    ],
+
 
     rulesDescription:
       "Sample Problem Statement:\nPlastic packaging waste remains a critical environmental challenge in India, with a significant portion ending up in landfills or as unmanaged waste. While multiple solutions exist, reuse-based packaging systems are emerging as a promising pathway toward circularity.\n\nWith evolving regulatory frameworks such as the Plastic Waste Management Rules, brands are now required to meet defined reuse targets, particularly for rigid packaging.\n\nHowever, despite its potential, large-scale adoption of reusable packaging systems remains limited due to challenges in logistics, consumer behavior, cost structures, and operational feasibility.\n\nYour Challenge - As a consulting team, design a scalable, economically viable, and consumer-friendly reuse system for plastic packaging in India.",
 
-    evaluationCriteria: [
-      "Problem understanding and clarity",
-      "Structured and logical approach",
-      "Depth of analysis",
-      "Feasibility and practicality of solutions",
-      "Creativity and innovation",
-      "Clarity of presentation"
-    ],
 
     mainImage:
       "/caseX.png",
@@ -401,27 +363,27 @@ export const NETWORKING_EVENTS = [
     type: "Summit",
     description: "Digital influencers and content creators come together for an immersive conclave.",
     fullDescription: "The Creator Conclave brings together digital influencers, content creators, and brand partners for an immersive session covering content strategy, monetization, audience growth, and the evolving creator economy.",
-    time: "5:30 PM – 7:30 PM",
+    time: "5:30 PM – 7:00 PM",
     day: "Day 2",
-    duration: "2 hours",
+    duration: "90 mins",
     speakers: [],
     venue: "IIEST Shibpur",
     capacity: "400 attendees",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop"
   },
   {
-    id: "main-speaker",
-    title: "Main Speaker",
-    type: "Keynote",
-    description: "The headline keynote address to close E-Summit'26 on an inspiring note.",
-    fullDescription: "The headline keynote session featuring a distinguished speaker addressing the audience with insights, inspiration, and a powerful closing message for E-Summit'26.",
-    time: "7:30 PM – 8:30 PM",
+    id: "cultural-program",
+    title: "Cultural Program",
+    type: "Culture",
+    description: "A grand cultural evening to wrap up E-Summit'26 with music, dance, and performances.",
+    fullDescription: "Celebrate the conclusion of E-Summit'26 with a grand cultural evening featuring music, dance, and creative performances by students and guest artists.",
+    time: "7:00 PM – 8:00 PM",
     day: "Day 2",
     duration: "1 hour",
     speakers: [],
     venue: "IIEST Shibpur",
-    capacity: "500 attendees",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop"
+    capacity: "All attendees",
+    image: "https://images.unsplash.com/photo-1514525253361-9f9a0c240974?w=800&h=400&fit=crop"
   }
 ];
 
