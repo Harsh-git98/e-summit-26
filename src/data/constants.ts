@@ -8,6 +8,7 @@ import {
 export const NAV_LINKS = [
   { label: "Competitions", href: "/competitions" },
   { label: "Event", href: "/events" },
+  { label: "Merch", href: "/merch" },
   // { label: "Creators", href: "/creators" },
   { label: "Startup-Expo", href: "/startup-expo" },
   { label: "Team", href: "/team" },
