@@ -15,7 +15,7 @@ export const NAV_LINKS = [
 
 // ── About Stats ──
 export const STATS = [
-  { label: "Attendees", value: 5000, suffix: "+" },
+  { label: "Attendees", value: 2000, suffix: "+" },
   { label: "Startups & Investors", value: 50, suffix: "+" },
   { label: "Speakers", value: 15, suffix: "+" },
 ];
@@ -116,7 +116,7 @@ export const COMPETITIONS = [
     teamSize: "2–3 members",
     prizePool: "₹10,000",
     deadline: "To Be Announced",
-
+    registrationLink: "Coming Soon",
     rulebookLink: "",
 
     keyFeatures: [
@@ -154,6 +154,8 @@ export const COMPETITIONS = [
       "Live Event Storytelling",
       "Engagement Driven"
     ],
+    registrationLink: "https://unstop.com/p/campus-creator-championship-scitillations26-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1674503",
+
 
     rulesDescription:
       "Campus Creator Championship is designed to evaluate participants on creativity, storytelling, and their ability to generate engagement under time constraints using live event environments.\n\nEvent Structure:\n1. Briefing Session: Participants will be briefed regarding rules, themes, and submission process.\n2. Content Creation Phase: Participants will create content during the event. All footage must be captured within E-Summit premises. Editing must be completed within the event duration.\n3. Submission Guidelines: Content must be uploaded as a Reel by the communicated deadline.\n\nRules & Regulations:\n• Content must be original and created during the event.\n• Use of pre-recorded or previously published content is strictly prohibited.\n• Any form of plagiarism or copyright violation will lead to disqualification.\n• The decision of the judging panel will be final and binding.",
@@ -185,6 +187,7 @@ export const COMPETITIONS = [
       "Structured analysis and presentation",
       "Actionable solution proposals"
     ],
+    registrationLink: "https://unstop.com/competitions/casex-case-study-competition-scitillations26-indian-institute-of-engineering-science-and-technology-iiest-s-1674499",
 
 
 
