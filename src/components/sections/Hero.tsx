@@ -8,7 +8,6 @@ import {
 import { ArrowRight, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
 import ShardBackground from "@/components/ShardBackground";
-import logo from "@/assets/logo-esumm1.png";
 
 const TARGET_DATE = new Date("2026-04-18T00:00:00").getTime();
 
@@ -128,19 +127,14 @@ const Hero = () => {
             initial={{ opacity: 0, y: 80 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-4xl sm:text-6xl md:text-8xl font-extrabold leading-tight tracking-tight flex flex-col items-center lg:items-start"
+            className="text-4xl sm:text-6xl md:text-6xl font-extrabold leading-tight tracking-tight flex flex-col items-center lg:items-start"
           >
-            <div className="mt-8 mb-4 relative w-80 md:w-[26rem] lg:w-[500px] max-w-full">
-              {/* Ambient glow effect behind the logo to make it pop */}
-              <div className="absolute inset-0 bg-purple-500/30 blur-[60px] rounded-full -z-10 scale-110" />
-              <img
-                src={logo}
-                fetchPriority="high"
-                decoding="sync"
-                className="w-full h-auto drop-shadow-[0_0_30px_rgba(168,85,247,0.9)] brightness-125 contrast-110 text-transparent"
-                alt="Scintillations E-Summit 2026 Logo"
-              />
-            </div>
+            <span className="mt-4 bg-gradient-to-br from-purple-100 via-fuchsia-300 to-sky-100 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(168,85,247,0.75)]">
+              Scintillations
+            </span>
+            <span className="mt-3 text-xl sm:text-2xl md:text-3xl text-white/85 tracking-[0.35em] uppercase">
+              E-Summit 2026
+            </span>
           </motion.h1>
 
           {/* <motion.p
@@ -158,12 +152,12 @@ const Hero = () => {
             transition={{ delay: 0.4 }}
             className="mt-6 flex items-center gap-3 justify-center lg:justify-start"
           >
-            <span className="text-sm text-purple-200/80 font-bold tracking-wide uppercase">Organised By</span>
+            <span className="text-sm text-white font-bold tracking-wide uppercase">Organised By</span>
             <br />
             <img
               src="https://res.cloudinary.com/diq6oo9ue/image/upload/v1776030798/ENTREPRENEURSHIP_DEVELOPMENT_CELL-removebg-preview_jlmtrt.png"
               alt="Entrepreneurship Development Cell, IIEST Shibpur"
-              className="h-10 md:h-16 object-contain"
+              className="h-10 md:h-16 object-contain "
               style={{ filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.9)) drop-shadow(0 0 16px rgba(255,255,255,0.5))' }}
             />
           </motion.div>
@@ -172,7 +166,7 @@ const Hero = () => {
           {/* CTA */}
           <div className="mt-12 flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
             <MagneticButton>
-              <Link to="/events" className="px-4 py-4 sm:px-10 sm:py-5 rounded-full bg-gradient-to-r from-primary to-purple-600 hover:from-purple-500 hover:to-primary transition-all duration-500 text-white font-bold text-sm sm:text-lg flex items-center gap-3 shadow-[0_0_30px_rgba(168,85,247,0.6)] w-full sm:w-auto justify-center uppercase tracking-wide">
+              <Link to="/events" className="px-4 py-4 sm:px-10 sm:py-5 rounded-full  bg-white/80 from-primary to-purple-600 hover:from-purple-500 hover:to-primary transition-all duration-500 text-black font-bold text-sm sm:text-lg flex items-center gap-3 shadow-[0_0_30px_rgba(168,85,247,0.6)] w-full sm:w-auto justify-center uppercase tracking-wide">
                 Register on <img src="https://res.cloudinary.com/diq6oo9ue/image/upload/q_auto/f_auto/v1775943637/unstop-logo_ihonix.svg" alt="Unstop" className="h-6 md:h-8 object-contain" />
               </Link>
             </MagneticButton>
