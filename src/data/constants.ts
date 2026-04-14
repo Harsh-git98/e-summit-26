@@ -209,6 +209,11 @@ export const NETWORKING_EVENTS = [
     id: "inauguration",
     title: "Inauguration",
     type: "Ceremony",
+<<<<<<< fix/replace-em-dashes
+    description: "Grand opening ceremony of E-Summit'26 - setting the stage for two days of innovation and entrepreneurship.",
+    fullDescription: "The official inauguration of E-Summit'26 at IIEST Shibpur. Join us as we kick off two days of competitions, keynotes, panels, and networking with a grand opening ceremony featuring distinguished guests and dignitaries.",
+=======
+>>>>>>> main
     time: "11:00 AM",
     day: "Day 1",
     duration: "45 mins",
@@ -354,6 +359,11 @@ export const NETWORKING_EVENTS = [
     id: "casex",
     title: "CaseX Study Championship",
     type: "Competition",
+<<<<<<< fix/replace-em-dashes
+    description: "Real-world consulting case study competition - analyze, strategize, and present.",
+    fullDescription: "CaseX is a case study competition that simulates real-world consulting problem solving. Teams analyze a business problem, develop structured solutions, and present their findings to a panel of judges.",
+=======
+>>>>>>> main
     time: "12:30 PM – 2:00 PM",
     day: "Day 2",
     duration: "90 mins",
