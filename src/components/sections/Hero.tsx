@@ -109,7 +109,7 @@ const Hero = () => {
   return (
     <section
       onMouseMove={move}
-      className="relative min-h-screen flex items-center overflow-hidden px-4 py-24 sm:py-28 md:py-0"
+      className="relative min-h-[650px] sm:min-h-screen flex items-center overflow-x-hidden px-4 py-16 sm:py-24 md:py-0"
     >
 
       {/* 3D SHARD BACKGROUND */}
@@ -132,7 +132,7 @@ const Hero = () => {
             <span className="mt-4 bg-gradient-to-br from-purple-100 via-fuchsia-300 to-sky-100 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(168,85,247,0.75)]">
               Scintillations
             </span>
-            <span className="mt-3 text-xl sm:text-2xl md:text-3xl text-white/85 tracking-[0.35em] uppercase">
+            <span className="mt-3 text-xl sm:text-2xl md:text-3xl text-white/85 tracking-[0.2em] sm:tracking-[0.3em] md:tracking-[0.35em] uppercase">
               E-Summit 2026
             </span>
           </motion.h1>
@@ -158,16 +158,16 @@ const Hero = () => {
               src="https://res.cloudinary.com/diq6oo9ue/image/upload/v1776030798/ENTREPRENEURSHIP_DEVELOPMENT_CELL-removebg-preview_jlmtrt.png"
               alt="Entrepreneurship Development Cell, IIEST Shibpur"
               className="h-10 md:h-16 object-contain "
-              style={{ filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.9)) drop-shadow(0 0 16px rgba(255,255,255,0.5))' }}
+              style={{ filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.2)) drop-shadow(0 0 16px rgba(255,255,255,0.1))' }}
             />
           </motion.div>
 
 
           {/* CTA */}
-          <div className="mt-12 flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
+          <div className="mt-12 flex flex-col sm:flex-row gap-2 justify-center lg:justify-start">
             <MagneticButton>
-              <Link to="/events" className="px-4 py-4 sm:px-10 sm:py-5 rounded-full  bg-white/80 from-primary to-purple-600 hover:from-purple-500 hover:to-primary transition-all duration-500 text-black font-bold text-sm sm:text-lg flex items-center gap-3 shadow-[0_0_30px_rgba(168,85,247,0.6)] w-full sm:w-auto justify-center uppercase tracking-wide">
-                Register on <img src="https://res.cloudinary.com/diq6oo9ue/image/upload/q_auto/f_auto/v1775943637/unstop-logo_ihonix.svg" alt="Unstop" className="h-6 md:h-8 object-contain" />
+              <Link to="/events" className="px-2 py-4 sm:py-2 rounded-full  bg-white/80 from-primary to-purple-600 hover:from-purple-500 hover:to-primary transition-all duration-500 text-black font-bold text-sm sm:text-lg flex items-center gap-3 shadow-[0_0_30px_rgba(168,85,247,0.6)] w-auto sm:w-auto justify-center uppercase tracking-wide">
+                Register on <img src="https://res.cloudinary.com/diq6oo9ue/image/upload/q_auto/f_auto/v1775943637/unstop-logo_ihonix.svg" alt="Unstop" className="h-6 md:h-6 object-contain" /><ArrowRight></ArrowRight>
               </Link>
             </MagneticButton>
 
