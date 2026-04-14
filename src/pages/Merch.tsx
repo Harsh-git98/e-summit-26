@@ -87,17 +87,12 @@ const MerchPage = () => {
                 Front & Back Preview
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
-                <div className="relative aspect-[3/4] rounded-2xl bg-gradient-to-b from-slate-900 to-black flex items-center justify-center border border-white/10">
-                  <span className="text-[10px] tracking-[.18em] uppercase text-purple-200/80">
-                    Front
-                  </span>
-                </div>
-                <div className="relative aspect-[3/4] rounded-2xl bg-gradient-to-b from-slate-900 to-black flex items-center justify-center border border-white/10">
-                  <span className="text-[10px] tracking-[.18em] uppercase text-purple-200/80">
-                    Back
-                  </span>
-                </div>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10">
+                <img
+                  src="https://res.cloudinary.com/diq6oo9ue/image/upload/v1776165602/Screenshot_2026-04-14_160145_cugsak.png"
+                  alt="E-Summit Merch"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               <p className="text-[11px] text-white/55 leading-relaxed">
