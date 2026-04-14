@@ -8,6 +8,7 @@ import {
 import { ArrowRight, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
 import ShardBackground from "@/components/ShardBackground";
+import ParticlesBg from "@/components/Particlesbg";
 
 const TARGET_DATE = new Date("2026-04-18T00:00:00").getTime();
 
@@ -113,6 +114,7 @@ const Hero = () => {
     >
 
       {/* 3D SHARD BACKGROUND */}
+      <ParticlesBg />
       <ShardBackground />
 
       <motion.div
@@ -167,7 +169,7 @@ const Hero = () => {
           <div className="mt-12 flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
             <MagneticButton>
               <Link to="/events" className="px-4 py-4 sm:px-10 sm:py-5 rounded-full  bg-white/80 from-primary to-purple-600 hover:from-purple-500 hover:to-primary transition-all duration-500 text-black font-bold text-sm sm:text-lg flex items-center gap-3 shadow-[0_0_30px_rgba(168,85,247,0.6)] w-full sm:w-auto justify-center uppercase tracking-wide">
-                Register on <img src="https://res.cloudinary.com/diq6oo9ue/image/upload/q_auto/f_auto/v1775943637/unstop-logo_ihonix.svg" alt="Unstop" className="h-6 md:h-8 object-contain" />
+                Register Now <img src="https://res.cloudinary.com/diq6oo9ue/image/upload/q_auto/f_auto/v1775943637/unstop-logo_ihonix.svg" alt="Unstop" className="h-6 md:h-8 object-contain" />
               </Link>
             </MagneticButton>
 
