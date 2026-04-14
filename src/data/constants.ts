@@ -487,10 +487,10 @@ export const INTERNSHIP_STEPS = [
 
 // ── Contact / Social ──
 export const SOCIAL_LINKS = [
-  { name: "Instagram", icon: Instagram, href: "https://instagram.com/edc.iiests", color: "hover:text-pink-500" },
-  { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/company/edc-iiests", color: "hover:text-blue-400" },
+  { name: "Instagram", icon: Instagram, href: "https://instagram.com/esummit.iiest", color: "hover:text-pink-500" },
+  { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/company/edciiests", color: "hover:text-blue-400" },
   { name: "Twitter", icon: Twitter, href: "https://twitter.com/edc_iiests", color: "hover:text-sky-400" },
-  { name: "Website", icon: Globe, href: "https://edc-iiests.in", color: "hover:text-primary" },
+  { name: "Website", icon: Globe, href: "https://edciiests.in", color: "hover:text-primary" },
   { name: "Email", icon: Mail, href: "mailto:iiests.edc@gmail.com", color: "hover:text-primary" },
 ];
 
