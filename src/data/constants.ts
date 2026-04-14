@@ -84,7 +84,7 @@ export const COMPETITIONS = [
     description:
       "The flagship business idea competition under BEC84 Angel Fund Scheme where IIEST students pitch innovative technology-driven startup ideas to secure funding, mentorship, and incubation support.",
 
-    teamSize: "2–4 members",
+    teamSize: "2-4 members",
     prizePool: "Up to ₹8,00,000 funding + incubation",
     deadline: "12 April, 11:59 PM",
 
@@ -109,12 +109,12 @@ export const COMPETITIONS = [
 
   {
     id: "vibe-build",
-    name: "VibeBuild – AI Product Challenge",
+    name: "VibeBuild - AI Product Challenge",
     tagline: "Build a SaaS product in 6 hours using AI Agents",
     description:
       "A high-intensity AI product development competition focused on Agentic AI workflows. Participants design, build, and deploy a SaaS solution using modern AI tools like Gemini, Claude, Stitch, and Antigravity.",
 
-    teamSize: "2–3 members",
+    teamSize: "2-3 members",
     prizePool: "₹10,000",
     deadline: "To Be Announced",
     registrationLink: "Coming Soon",
@@ -171,7 +171,7 @@ export const COMPETITIONS = [
 
   {
     id: "case-x",
-    name: "CaseX – Case Study Competition",
+    name: "CaseX - Case Study Competition",
     tagline: "Simulate real-world consulting problem solving",
     description:
       "CaseX is designed to simulate real-world consulting problem solving, where student teams analyze a business problem and propose structured, actionable solutions. We aim to collaborate with your organization by curating a case problem statement based on your industry, allowing participants to work on practical challenges with real-world relevance.",
@@ -209,11 +209,7 @@ export const NETWORKING_EVENTS = [
     id: "inauguration",
     title: "Inauguration",
     type: "Ceremony",
-<<<<<<< fix/replace-em-dashes
-    description: "Grand opening ceremony of E-Summit'26 - setting the stage for two days of innovation and entrepreneurship.",
-    fullDescription: "The official inauguration of E-Summit'26 at IIEST Shibpur. Join us as we kick off two days of competitions, keynotes, panels, and networking with a grand opening ceremony featuring distinguished guests and dignitaries.",
-=======
->>>>>>> main
+
     time: "11:00 AM",
     day: "Day 1",
     duration: "45 mins",
@@ -230,7 +226,7 @@ export const NETWORKING_EVENTS = [
     id: "keynote-1",
     title: "Keynote Session 1",
     type: "Keynote",
-    time: "11:45 AM – 12:15 PM",
+    time: "11:45 AM - 12:15 PM",
     day: "Day 1",
     duration: "30 mins",
     venue: "IIEST Shibpur",
@@ -246,7 +242,7 @@ export const NETWORKING_EVENTS = [
     id: "keynote-2",
     title: "Keynote Session 2",
     type: "Keynote",
-    time: "12:15 PM – 12:45 PM",
+    time: "12:15 PM - 12:45 PM",
     day: "Day 1",
     duration: "30 mins",
     venue: "IIEST Shibpur",
@@ -262,7 +258,7 @@ export const NETWORKING_EVENTS = [
     id: "bec84",
     title: "BEC 84 Investor Pitch",
     type: "Competition",
-    time: "2:00 PM – 3:30 PM",
+    time: "2:00 PM - 3:30 PM",
     day: "Day 1",
     duration: "90 mins",
     venue: "IIEST Shibpur",
@@ -278,7 +274,7 @@ export const NETWORKING_EVENTS = [
     id: "panel-discussion-1",
     title: "Panel Discussion 1",
     type: "Panel Discussion",
-    time: "3:30 PM – 4:30 PM",
+    time: "3:30 PM - 4:30 PM",
     day: "Day 1",
     duration: "1 hour",
     venue: "IIEST Shibpur",
@@ -294,7 +290,7 @@ export const NETWORKING_EVENTS = [
     id: "compliance-workshop",
     title: "Compliance Workshop",
     type: "Workshop",
-    time: "4:30 PM – 5:15 PM",
+    time: "4:30 PM - 5:15 PM",
     day: "Day 1",
     duration: "45 mins",
     venue: "IIEST Shibpur",
@@ -310,7 +306,7 @@ export const NETWORKING_EVENTS = [
     id: "creator-conclave",
     title: "Creator Conclave",
     type: "Summit",
-    time: "5:30 PM – 8:00 PM",
+    time: "5:30 PM - 8:00 PM",
     day: "Day 1",
     duration: "2.5 hours",
     venue: "IIEST Shibpur",
@@ -327,7 +323,7 @@ export const NETWORKING_EVENTS = [
     id: "masterclass",
     title: "Masterclass",
     type: "Workshop",
-    time: "10:30 AM – 11:30 AM",
+    time: "10:30 AM - 11:30 AM",
     day: "Day 2",
     duration: "1 hour",
     venue: "IIEST Shibpur",
@@ -343,7 +339,7 @@ export const NETWORKING_EVENTS = [
     id: "alumni-panel",
     title: "Alumni Panel Discussion",
     type: "Panel Discussion",
-    time: "11:30 AM – 12:30 PM",
+    time: "11:30 AM - 12:30 PM",
     day: "Day 2",
     duration: "1 hour",
     venue: "IIEST Shibpur",
@@ -359,12 +355,8 @@ export const NETWORKING_EVENTS = [
     id: "casex",
     title: "CaseX Study Championship",
     type: "Competition",
-<<<<<<< fix/replace-em-dashes
-    description: "Real-world consulting case study competition - analyze, strategize, and present.",
-    fullDescription: "CaseX is a case study competition that simulates real-world consulting problem solving. Teams analyze a business problem, develop structured solutions, and present their findings to a panel of judges.",
-=======
->>>>>>> main
-    time: "12:30 PM – 2:00 PM",
+
+    time: "12:30 PM - 2:00 PM",
     day: "Day 2",
     duration: "90 mins",
     venue: "IIEST Shibpur",
@@ -380,7 +372,7 @@ export const NETWORKING_EVENTS = [
     id: "vibebuild",
     title: "VibeBuild Demonstration",
     type: "Showcase",
-    time: "2:30 PM – 3:30 PM",
+    time: "2:30 PM - 3:30 PM",
     day: "Day 2",
     duration: "1 hour",
     venue: "IIEST Shibpur",
@@ -396,7 +388,7 @@ export const NETWORKING_EVENTS = [
     id: "startup-roundtable",
     title: "Startup Roundtable",
     type: "Networking",
-    time: "4:00 PM – 5:30 PM",
+    time: "4:00 PM - 5:30 PM",
     day: "Day 2",
     duration: "90 mins",
     venue: "IIEST Shibpur",
@@ -412,7 +404,7 @@ export const NETWORKING_EVENTS = [
     id: "sharktank",
     title: "Shark Tank",
     type: "Competition",
-    time: "5:30 PM – 7:00 PM",
+    time: "5:30 PM - 7:00 PM",
     day: "Day 2",
     duration: "90 mins",
     venue: "IIEST Shibpur",
@@ -428,7 +420,7 @@ export const NETWORKING_EVENTS = [
     id: "cultural",
     title: "Cultural Program",
     type: "Culture",
-    time: "7:00 PM – 8:00 PM",
+    time: "7:00 PM - 8:00 PM",
     day: "Day 2",
     duration: "1 hour",
     venue: "IIEST Shibpur",
