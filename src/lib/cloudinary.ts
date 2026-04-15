@@ -15,7 +15,7 @@ export interface UploadResult {
 export interface UploadOptions {
   /** Cloudinary folder path, e.g. "Speakers" */
   folder?: string;
-  /** Called periodically with 0–100 progress */
+  /** Called periodically with 0-100 progress */
   onProgress?: (percent: number) => void;
 }
 
