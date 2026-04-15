@@ -102,20 +102,18 @@ export const COMPETITIONS = [
       "Participants must submit a concise pitch deck outlining their startup idea including problem, solution, market opportunity, and business model. Shortlisted teams will present their ideas during E-Summit and selected teams will undergo further evaluation based on execution potential and progress. Only eligible IIEST students can participate and team size must be strictly followed.",
 
     mainImage:
-      "/bec84.png",
+      "https://res.cloudinary.com/diq6oo9ue/image/upload/q_auto/f_auto/v1776251167/BEC_84_Poster_tiryox.jpg",
     bannerImage:
-      "/bec84.png"
+      "https://res.cloudinary.com/diq6oo9ue/image/upload/q_auto/f_auto/v1776251167/BEC_84_Poster_tiryox.jpg"
   },
 
   {
     id: "vibe-build",
     name: "VibeBuild - AI Product Challenge",
-    name: "VibeBuild - AI Product Challenge",
     tagline: "Build a SaaS product in 6 hours using AI Agents",
     description:
       "A high-intensity AI product development competition focused on Agentic AI workflows. Participants design, build, and deploy a SaaS solution using modern AI tools like Gemini, Claude, Stitch, and Antigravity.",
 
-    teamSize: "2-3 members",
     teamSize: "2-3 members",
     prizePool: "₹10,000",
     deadline: "To Be Announced",
@@ -133,9 +131,9 @@ export const COMPETITIONS = [
       "Teams must build a functional SaaS product within a limited time using AI tools and agent-based workflows. Manual coding should be minimal, with emphasis on leveraging AI platforms effectively. Judging will be based on execution speed, working prototype, and system design. All teams must adhere to tool constraints and complete development within the given time window.",
 
     mainImage:
-      "/Vibebuild.png",
+      "https://res.cloudinary.com/diq6oo9ue/image/upload/q_auto/f_auto/v1776251170/Vibe_Build_Poster_qwz5oi.jpg",
     bannerImage:
-      "/vibebuild-banner.png"
+      "https://res.cloudinary.com/diq6oo9ue/image/upload/q_auto/f_auto/v1776251170/Vibe_Build_Poster_qwz5oi.jpg"
   },
 
   {
@@ -166,14 +164,13 @@ export const COMPETITIONS = [
 
 
     mainImage:
-      "/creatorCompetition.png",
+      "https://res.cloudinary.com/diq6oo9ue/image/upload/q_auto/f_auto/v1776251171/Campus_Creator_Championship_Poster_ize2jq.jpg",
     bannerImage:
-      "/Banners/Campus_Creator_Banner.jpeg"
+      "https://res.cloudinary.com/diq6oo9ue/image/upload/q_auto/f_auto/v1776251171/Campus_Creator_Championship_Poster_ize2jq.jpg"
   },
 
   {
     id: "case-x",
-    name: "CaseX - Case Study Competition",
     name: "CaseX - Case Study Competition",
     tagline: "Simulate real-world consulting problem solving",
     description:
@@ -200,9 +197,9 @@ export const COMPETITIONS = [
 
 
     mainImage:
-      "/caseX.png",
+      "https://res.cloudinary.com/diq6oo9ue/image/upload/q_auto/f_auto/v1776251169/CaseX_Poster_g8kbjs.jpg",
     bannerImage:
-      "/caseX-banner.png"
+      "https://res.cloudinary.com/diq6oo9ue/image/upload/q_auto/f_auto/v1776251169/CaseX_Poster_g8kbjs.jpg"
   }
 ];
 
