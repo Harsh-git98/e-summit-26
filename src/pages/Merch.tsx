@@ -74,8 +74,8 @@ const MerchPage = () => {
               <p className="font-semibold text-white/75 tracking-[.18em] uppercase text-[11px] mb-1">
                 Queries
               </p>
-              <p>Arnav Aarit – 9060227813</p>
-              <p>Yash Mahajan – 9503672254</p>
+              <p>Arnav Aarit - 9060227813</p>
+              <p>Yash Mahajan - 9503672254</p>
             </div>
           </div>
 
@@ -96,7 +96,7 @@ const MerchPage = () => {
               </div>
 
               <p className="text-[11px] text-white/55 leading-relaxed">
-                Minimal black tee with the Scintillations' 26 identity — built for photos, keynotes, late-night hustle and everything in between.
+                Minimal black tee with the Scintillations' 26 identity - built for photos, keynotes, late-night hustle and everything in between.
               </p>
             </div>
           </div>

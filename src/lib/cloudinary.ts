@@ -15,14 +15,14 @@ export interface UploadResult {
 export interface UploadOptions {
   /** Cloudinary folder path, e.g. "Speakers" */
   folder?: string;
-  /** Called periodically with 0–100 progress */
+  /** Called periodically with 0-100 progress */
   onProgress?: (percent: number) => void;
 }
 
 // ─── Upload Function ────────────────────────────────────────────────────────
 /**
  * Upload a File to Cloudinary using an unsigned upload preset.
- * No backend required — uses the unsigned upload API.
+ * No backend required - uses the unsigned upload API.
  */
 export async function uploadToCloudinary(
   file: File,
@@ -73,7 +73,7 @@ export async function uploadToCloudinary(
 // ─── URL Helpers ────────────────────────────────────────────────────────────
 /**
  * Get an optimised, auto-cropped thumbnail URL for a given public ID.
- * Uses Cloudinary URL-based transformations — no SDK imports needed.
+ * Uses Cloudinary URL-based transformations - no SDK imports needed.
  */
 export function getThumbnailUrl(
   publicId: string,
