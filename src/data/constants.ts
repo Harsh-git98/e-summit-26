@@ -209,7 +209,6 @@ export const NETWORKING_EVENTS = [
     id: "inauguration",
     title: "Inauguration",
     type: "Ceremony",
-
     time: "11:00 AM",
     day: "Day 1",
     duration: "45 mins",
@@ -221,47 +220,49 @@ export const NETWORKING_EVENTS = [
     image: "https://images.unsplash.com/photo-1503428593586-e225b39bddfe?w=800",
     registrationLink: null
   },
-
   {
     id: "keynote-1",
     title: "Keynote Session 1",
     type: "Keynote",
-    time: "11:45 AM - 12:15 PM",
-    time: "11:45 AM - 12:15 PM",
+    time: "11:45 AM",
     day: "Day 1",
     duration: "30 mins",
     venue: "IIEST Shibpur",
     capacity: "500 attendees",
-    speakers: [{ name: "Debasis Sen", title: "Industry Leader", company: "" }],
-    description: "Startup & innovation insights.",
-    fullDescription: "Founders, investors, and industry leaders share insights on entrepreneurship, innovation, and real-world business challenges.",
+    speakers: [{ 
+      name: "Debasis Sen", 
+      title: "Former IAS Officer, Govt. of West Bengal & Founder, New Bengal Consulting Pvt. Ltd.", 
+      company: "Ex-Additional Chief Secretary (IT)" 
+    }],
+    description: "TOPIC: FROM POLICY TO PRODUCT: HOW GOVERNMENT SHAPE STARTUP ECOSYSTEM",
+    fullDescription: "Debasis Sen, Former IAS Officer and Founder of New Bengal Consulting Pvt. Ltd., shares insights on how government policies and digital initiatives shape the startup ecosystem.",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800",
     registrationLink: "https://unstop.com/p/keynote-session-1-scintillations26-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1674965"
   },
-
   {
     id: "keynote-2",
     title: "Keynote Session 2",
     type: "Keynote",
-    time: "12:15 PM - 12:45 PM",
-    time: "12:15 PM - 12:45 PM",
+    time: "12:15 PM",
     day: "Day 1",
     duration: "30 mins",
     venue: "IIEST Shibpur",
     capacity: "500 attendees",
-    speakers: [{ name: "Avelo Roy", title: "Entrepreneur", company: "" }],
-    description: "Scaling startups & business strategy.",
-    fullDescription: "A deep dive into entrepreneurship, innovation, and building scalable startups from experienced founders.",
+    speakers: [{ 
+      name: "Avelo Roy", 
+      title: "Managing Director & Startup Mentor at Kolkata Ventures", 
+      company: "4 Times TEDx speaker" 
+    }],
+    description: "TOPIC: WHY YOU WON'T GET FUNDED - AND WHAT IT ACTUALLY TAKES TO RAISE YOUR FIRST FUND",
+    fullDescription: "Avelo Roy, Managing Director of Kolkata Ventures, provides a deep dive into the realities of startup funding and what it truly takes to raise your first round.",
     image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800",
     registrationLink: "https://unstop.com/p/keynote-session-2-scintillations26-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1674968"
   },
-
   {
     id: "bec84",
     title: "BEC 84 Investor Pitch",
     type: "Competition",
-    time: "2:00 PM - 3:30 PM",
-    time: "2:00 PM - 3:30 PM",
+    time: "02:00 PM",
     day: "Day 1",
     duration: "90 mins",
     venue: "IIEST Shibpur",
@@ -272,30 +273,31 @@ export const NETWORKING_EVENTS = [
     image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800",
     registrationLink: "https://unstop.com/p/bec-84-investor-pitch-scitillations26-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1674670"
   },
-
   {
     id: "panel-discussion-1",
     title: "Panel Discussion 1",
     type: "Panel Discussion",
-    time: "3:30 PM - 4:30 PM",
-    time: "3:30 PM - 4:30 PM",
+    time: "03:30 PM",
     day: "Day 1",
     duration: "1 hour",
     venue: "IIEST Shibpur",
     capacity: "300 attendees",
-    speakers: [],
-    description: "Power panel with founders & investors.",
-    fullDescription: "Experts discuss entrepreneurship, scaling, and real-world startup challenges in India.",
+    speakers: [
+      { name: "Aaquib Hussain", title: "Founding Member", company: "Freeflow Ventures" },
+      { name: "Rajarshi Nag", title: "Founder", company: "Drivers4me" },
+      { name: "Amitabha Dutta", title: "ex-Vice President", company: "STUP Consultants Pvt.Ltd" },
+      { name: "Gaurav Kapoor", title: "CBO", company: "IIM Calcutta Innovation Park" }
+    ],
+    description: "TOPIC: FROM IDEA TO IMPACT: WHAT IT TAKES TO BUILD SCALABLE STARTUPS IN INDIA",
+    fullDescription: "An elite panel of founders and investors discuss the journey from initial idea to creating substantial impact and building scalable startups within the Indian ecosystem.",
     image: "https://images.unsplash.com/photo-1515169067868-5387ec356754?w=800",
     registrationLink: "https://unstop.com/p/panel-discussion-1-scintillations26-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1674972"
   },
-
   {
     id: "compliance-workshop",
     title: "Compliance Workshop",
     type: "Workshop",
-    time: "4:30 PM - 5:15 PM",
-    time: "4:30 PM - 5:15 PM",
+    time: "04:30 PM",
     day: "Day 1",
     duration: "45 mins",
     venue: "IIEST Shibpur",
@@ -306,13 +308,11 @@ export const NETWORKING_EVENTS = [
     image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800",
     registrationLink: "https://unstop.com/p/esummit-2026-compliance-workshop-scintillations26-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1674713"
   },
-
   {
     id: "creator-conclave",
     title: "Creator Conclave",
     type: "Summit",
-    time: "5:30 PM - 8:00 PM",
-    time: "5:30 PM - 8:00 PM",
+    time: "05:30 PM",
     day: "Day 1",
     duration: "2.5 hours",
     venue: "IIEST Shibpur",
@@ -327,119 +327,104 @@ export const NETWORKING_EVENTS = [
   // ── DAY 2 ──
   {
     id: "masterclass",
-    title: "Masterclass",
+    title: "Masterclass By Prof. Chandradeep Mitra",
     type: "Workshop",
-    time: "10:30 AM - 11:30 AM",
-    time: "10:30 AM - 11:30 AM",
+    time: "11:00 AM",
     day: "Day 2",
     duration: "1 hour",
     venue: "IIEST Shibpur",
     capacity: "300 attendees",
-    speakers: [],
-    description: "Hands-on learning with experts.",
-    fullDescription: "Workshops led by industry professionals on startups, marketing, product, and business strategy.",
+    speakers: [
+      { name: "Prof. Chandradeep Mitra", title: "Professor", company: "IIM Calcutta" }
+    ],
+    description: "TOPIC: FROM IDEA TO FIRST CUSTOMER: GO-TO-MARKET MASTERCLASS",
+    fullDescription: "A masterclass by Prof. Chandradeep Mitra on going from an idea to securing your first customer with effective go-to-market strategies.",
     image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800",
     registrationLink: "https://unstop.com/p/masterclass-scintillations26-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1674973"
   },
-
+  {
+    id: "sharktank",
+    title: "Beyond Shark Tank : Founders Unplugged",
+    type: "Panel Discussion",
+    time: "12:00 PM",
+    day: "Day 2",
+    duration: "1 hour",
+    venue: "IIEST Shibpur",
+    capacity: "500 attendees",
+    speakers: [
+      { name: "Rohan Roy", title: "Founder", company: "Matri" },
+      { name: "Shamik Guha", title: "Founder", company: "Altor" },
+      { name: "Pallab Ghosh", title: "Founder", company: "Gappu" },
+      { name: "Megha Sarayan", title: "CEO", company: "Modge" }
+    ],
+    description: "Guest Members discussing life beyond the pitch.",
+    fullDescription: "Hear unplugged stories from founders who have navigated the startup ecosystem beyond the tank.",
+    image: "https://images.unsplash.com/photo-1559526324-593bc073d938?w=800",
+    registrationLink: "https://unstop.com/p/sharktank-scintillations26-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1674983"
+  },
+  {
+    id: "vibebuild",
+    title: "Vibe Build / Case - X Demonstration",
+    type: "Showcase",
+    time: "02:00 PM",
+    day: "Day 2",
+    duration: "1.5 hours",
+    venue: "IIEST Shibpur",
+    capacity: "300 attendees",
+    speakers: [],
+    description: "AI product and real-world business case showcase.",
+    fullDescription: "Live demonstration of AI-powered SaaS products built during the VibeBuild competition and presentations from Case-X Case Study competition.",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800",
+    registrationLink: "https://unstop.com/hackathons/vibe-build-scintillations26-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1675463"
+  },
   {
     id: "alumni-panel",
     title: "Alumni Panel Discussion",
     type: "Panel Discussion",
-    time: "11:30 AM - 12:30 PM",
-    time: "11:30 AM - 12:30 PM",
+    time: "03:00 PM",
     day: "Day 2",
     duration: "1 hour",
     venue: "IIEST Shibpur",
     capacity: "300 attendees",
-    speakers: [],
-    description: "Learn from alumni journeys.",
-    fullDescription: "Distinguished alumni share career insights, startup journeys, and guidance for students.",
+    speakers: [
+      { name: "Navin Gupta", title: "Founder", company: "Arosia Waters" },
+      { name: "Sanjoy Chatterjee", title: "Co Founder", company: "Entiovi Technologies" },
+      { name: "Surajit Pal", title: "Director", company: "Realization Technologies" },
+      { name: "Dr. Raj Ray", title: "Founder", company: "Adyakshar Technologies" }
+    ],
+    description: "TOPIC: STARTUP VS CORPORATE CAREER: WHAT SHOULD YOUNG ENGINEERS CHOOSE",
+    fullDescription: "Distinguished alumni share real-world insights, discussing the choices between a startup hustle and a corporate career.",
     image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800",
     registrationLink: "https://unstop.com/p/startup-roundtable-scintillations26-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1674982"
   },
-
   {
-    id: "casex",
-    title: "CaseX Study Championship",
+    id: "campus-creator-timeline",
+    title: "Campus Creator Championship",
     type: "Competition",
-    time: "12:30 PM - 2:00 PM",
+    time: "Throughout Event",
     day: "Day 2",
-    duration: "90 mins",
-    venue: "IIEST Shibpur",
-    capacity: "200 attendees",
-    speakers: [],
-    description: "Real-world business case competition.",
-    fullDescription: "Analyze real business problems, build strategies, and present solutions like top consultants.",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800",
-    registrationLink: "https://unstop.com/competitions/casex-case-study-competition-scitillations26-indian-institute-of-engineering-science-and-technology-iiest-s-1674499"
-  },
-
-  {
-    id: "vibebuild",
-    title: "VibeBuild Demonstration",
-    type: "Showcase",
-    time: "2:30 PM - 3:30 PM",
-    time: "2:30 PM - 3:30 PM",
-    day: "Day 2",
-    duration: "1 hour",
-    venue: "IIEST Shibpur",
-    capacity: "300 attendees",
-    speakers: [],
-    description: "AI product showcase.",
-    fullDescription: "Live demonstration of AI-powered SaaS products built during the VibeBuild competition.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800",
-    registrationLink: null
-  },
-
-  {
-    id: "startup-roundtable",
-    title: "Startup Roundtable",
-    type: "Networking",
-    time: "4:00 PM - 5:30 PM",
-    time: "4:00 PM - 5:30 PM",
-    day: "Day 2",
-    duration: "90 mins",
-    venue: "IIEST Shibpur",
-    capacity: "150 attendees",
-    speakers: [],
-    description: "Closed-door founder discussions.",
-    fullDescription: "Interactive discussions on fundraising, scaling, and growth strategies with founders and investors.",
-    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800",
-    registrationLink: "https://unstop.com/p/startup-roundtable-scintillations26-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1674982"
-  },
-
-  {
-    id: "sharktank",
-    title: "Shark Tank",
-    type: "Competition",
-    time: "5:30 PM - 7:00 PM",
-    time: "5:30 PM - 7:00 PM",
-    day: "Day 2",
-    duration: "90 mins",
-    venue: "IIEST Shibpur",
-    capacity: "500 attendees",
-    speakers: [],
-    description: "Pitch to real investors.",
-    fullDescription: "A high-stakes startup pitching event where participants present ideas and compete for funding and mentorship.",
-    image: "https://images.unsplash.com/photo-1559526324-593bc073d938?w=800",
-    registrationLink: "https://unstop.com/p/sharktank-scintillations26-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1674983"
-  },
-
-  {
-    id: "cultural",
-    title: "Cultural Program",
-    type: "Culture",
-    time: "7:00 PM - 8:00 PM",
-    time: "7:00 PM - 8:00 PM",
-    day: "Day 2",
-    duration: "1 hour",
+    duration: "Full Event",
     venue: "IIEST Shibpur",
     capacity: "All attendees",
     speakers: [],
-    description: "Closing cultural night.",
-    fullDescription: "Celebrate the end of E-Summit with music, dance, and performances.",
-    image: "https://images.unsplash.com/photo-1514525253361-9f9a0c240974?w=800",
+    description: "Real-time content creation competition.",
+    fullDescription: "Participants create, edit, and publish Instagram Reels throughout the event duration, capturing the essence of E-Summit.",
+    image: "https://res.cloudinary.com/diq6oo9ue/image/upload/q_auto/f_auto/v1776251171/Campus_Creator_Championship_Poster_ize2jq.jpg",
+    registrationLink: "https://unstop.com/p/campus-creator-championship-scitillations26-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1674503"
+  },
+  {
+    id: "startup-expo-timeline",
+    title: "Startup Expo",
+    type: "Exhibition",
+    time: "Throughout Event",
+    day: "Day 2",
+    duration: "Full Event",
+    venue: "IIEST Shibpur",
+    capacity: "All attendees",
+    speakers: [],
+    description: "Showcase of innovative startups.",
+    fullDescription: "Meet the brightest startup founders and explore their innovative products and services at the E-Summit'26 Startup Expo.",
+    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800",
     registrationLink: null
   }
 ];

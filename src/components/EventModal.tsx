@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Clock, MapPin, Users, CalendarDays } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import UnstopCTA from "@/components/UnstopCTA";
 
 interface Speaker {
   name: string;
@@ -198,13 +199,7 @@ const EventModal = ({ event, onClose }: EventModalProps) => {
                   whileTap={{ scale: 0.95 }}
                   className="flex-1"
                 >
-                  <Button
-                    size="lg"
-                    onClick={() => window.open(event.registrationLink, "_blank")}
-                    className="w-full bg-gradient-to-r from-primary to-secondary hover:shadow-lg hover:shadow-primary/50"
-                  >
-                    Register for this Event
-                  </Button>
+                  <UnstopCTA href={event.registrationLink} className="w-full" />
                 </motion.div>
                 <motion.div
                   whileHover={{ scale: 1.05 }}

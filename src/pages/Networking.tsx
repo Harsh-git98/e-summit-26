@@ -3,6 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useMemo, useState } from "react";
 import { NETWORKING_EVENTS } from "@/data/constants";
 import EventModal from "@/components/EventModal";
+import UnstopCTA from "@/components/UnstopCTA";
 import { ChevronRight, Mic, Calendar } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import ParticleCanvas from "@/components/ParticleCanvas";
@@ -39,9 +40,7 @@ const DayTimeline = ({
         >
           <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-center lg:mb-12 sm:mb-6 mb-4 w-full">
 
-            <Link to="https://unstop.com/college-fests/scitillations26-indian-institute-of-engineering-science-and-technology-iiest-shibpur-458988" className="px-4 py-4 sm:px-10 sm:py-5 rounded-full onhover:bg-purple-600 transition-all duration-500 text-white font-bold text-sm sm:text-lg flex items-center gap-3 shadow-[0_0_30px_rgba(168,85,247,0.6)] w-full sm:w-auto justify-center uppercase tracking-wide">
-              Register on <img src="https://res.cloudinary.com/diq6oo9ue/image/upload/q_auto/f_auto/v1775943637/unstop-logo_ihonix.svg" alt="Unstop" className="h-6 md:h-8 object-contain" />
-            </Link>
+            <UnstopCTA href="https://unstop.com/college-fests/scitillations26-indian-institute-of-engineering-science-and-technology-iiest-shibpur-458988" />
           </div>
 
           <div className="flex items-center gap-3 mb-3">
@@ -180,7 +179,7 @@ const NetworkingPage = () => {
             </motion.div>
 
             <motion.h1
-              className="font-heading text-5xl sm:text-6xl md:text-7xl font-extrabold mb-6 leading-tight"
+              className="font-heading text-4xl sm:text-6xl md:text-7xl font-extrabold mb-6 leading-tight"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
@@ -271,7 +270,7 @@ const NetworkingPage = () => {
         {activeDay === 1 ? (
           <DayTimeline
             dayLabel="Day 1"
-            dayDate="Inauguration · Keynotes · Shark Tank"
+            dayDate="18 April 2026 · Inauguration · Keynotes · Creator Conclave"
             events={day1Events}
             accentFrom="hsl(262, 83%, 58%)"
             accentTo="hsl(330, 81%, 60%)"
@@ -280,7 +279,7 @@ const NetworkingPage = () => {
         ) : (
           <DayTimeline
             dayLabel="Day 2"
-            dayDate="Masterclass · Panels · Creator Conclave"
+            dayDate="19 April 2026 · Masterclass · Shark Tank · Startup Expo"
             events={day2Events}
             accentFrom="hsl(199, 89%, 48%)"
             accentTo="hsl(162, 73%, 46%)"

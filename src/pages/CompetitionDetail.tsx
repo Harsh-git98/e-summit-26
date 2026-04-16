@@ -4,6 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { COMPETITIONS } from "@/data/constants";
 import { Button } from "@/components/ui/button";
 import { Download, ArrowLeft, Calendar, Users, Trophy, FileText } from "lucide-react";
+import UnstopCTA from "@/components/UnstopCTA";
 import RegistrationForm from "@/components/RegistrationForm";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -349,13 +350,7 @@ const CompetitionDetail = () => {
                   </p>
 
                   {competition.registrationLink ? (
-                    <Button
-                      size="lg"
-                      className="w-full sm:w-auto"
-                      onClick={() => window.open(competition.registrationLink, "_blank")}
-                    >
-                      Register Now
-                    </Button>
+                    <UnstopCTA href={competition.registrationLink} className="w-full sm:w-auto" />
                   ) : (
                     <RegistrationForm competition={competition} />
                   )}

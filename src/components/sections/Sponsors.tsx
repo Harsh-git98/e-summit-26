@@ -46,14 +46,13 @@ const Sponsors = () => {
           </div>
         </motion.div>
 
-        {/* Past */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <h3 className="font-heading text-base sm:text-lg font-semibold text-center mb-6 sm:mb-8 text-muted-foreground">Past Sponsors</h3>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2 sm:gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-2 sm:gap-3">
             {PAST_SPONSORS.map((s, index) => (
               <motion.div 
                 key={s.name} 
