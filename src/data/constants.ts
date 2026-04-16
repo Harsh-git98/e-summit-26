@@ -115,9 +115,9 @@ export const COMPETITIONS = [
       "A high-intensity AI product development competition focused on Agentic AI workflows. Participants design, build, and deploy a SaaS solution using modern AI tools like Gemini, Claude, Stitch, and Antigravity.",
 
     teamSize: "2-3 members",
-    prizePool: "₹10,000",
-    deadline: "To Be Announced",
-    registrationLink: "Coming Soon",
+    prizePool: "₹12,000",
+    deadline: "Check On Unstop for registration deadline",
+    registrationLink: "https://unstop.com/hackathons/vibe-build-scintillations26-indian-institute-of-engineering-science-and-technology-iiest-shibpur-1675463",
     rulebookLink: "",
 
     keyFeatures: [
@@ -144,7 +144,7 @@ export const COMPETITIONS = [
       "Campus Creator Championship is a real-time content creation competition conducted during the E-Summit. Participants are required to conceptualize, shoot, edit, and publish short-form video content (Instagram Reels) within the event duration.",
 
     teamSize: "Individual / Team",
-    prizePool: "₹7,000",
+    prizePool: "₹12,000",
     deadline: "Throughout E-Summit (Full Day)",
 
     rulebookLink: "",
@@ -176,9 +176,9 @@ export const COMPETITIONS = [
     description:
       "CaseX is designed to simulate real-world consulting problem solving, where student teams analyze a business problem and propose structured, actionable solutions. We aim to collaborate with your organization by curating a case problem statement based on your industry, allowing participants to work on practical challenges with real-world relevance.",
 
-    teamSize: "To Be Announced",
-    prizePool: "₹7,000 + Internship Opportunities",
-    deadline: "To Be Announced",
+    teamSize: "Check on Unstop for team size requirements",
+    prizePool: "₹12,000 + Internship Opportunities",
+    deadline: "Check on Unstop for registration deadline",
 
     rulebookLink: "",
 
