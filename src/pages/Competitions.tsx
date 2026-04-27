@@ -63,18 +63,57 @@ const CompetitionsPage = () => {
             </div>
 
             <div className="glass rounded-2xl p-6 border border-border/40 bg-gradient-to-br from-background/80 to-background/40">
+  <h3 className="font-heading text-xl md:text-2xl font-bold mb-2 text-primary">
+    Campus Creator Championship
+  </h3>
+
+  <p className="text-xs md:text-sm text-muted-foreground/70 mb-3">
+    Indian Institute of Engineering Science and Technology (IIEST), Shibpur · Scintillations'26
+  </p>
+
+  <p className="text-xs md:text-sm text-muted-foreground/70 mb-4">
+    Updated On: Apr 28, 2026
+  </p>
+
+  <p className="font-medium text-sm md:text-base mb-2">🏆 Overall Result</p>
+
+  <div className="overflow-x-auto">
+    <table className="w-full text-sm md:text-base text-left border-collapse">
+      <thead>
+        <tr className="border-b border-border/40 text-muted-foreground/80">
+          <th className="py-2">Rank</th>
+          <th className="py-2">Team Name</th>
+          <th className="py-2">Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr className="border-b border-border/30">
+          <td className="py-2 font-medium">1</td>
+          <td className="py-2">Harsh Ranjan</td>
+          <td className="py-2">Harsh Ranjan</td>
+        </tr>
+        <tr>
+          <td className="py-2 font-medium">2</td>
+          <td className="py-2">Islavath Raj Kumar</td>
+          <td className="py-2">Islavath Raj Kumar</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+   <p className="text-sm md:text-base text-muted-foreground/90 leading-relaxed">
+       Further details regarding the submission of bank account details and the prize distribution process will be communicated shortly. Prize disbursement is currently subject to standard administrative and official clearance procedures. We congratulate all participants for their outstanding efforts.
+    </p>
+</div>
+
+            <div className="glass rounded-2xl p-6 border border-border/40 bg-gradient-to-br from-background/80 to-background/40">
               <h3 className="font-heading text-xl md:text-2xl font-bold mb-4">Vibe Build Hackathon</h3>
               <p className="text-sm md:text-base text-muted-foreground/90 leading-relaxed">
                 To be updated soon.
               </p>
             </div>
 
-            <div className="glass rounded-2xl p-6 border border-border/40 bg-gradient-to-br from-background/80 to-background/40">
-              <h3 className="font-heading text-xl md:text-2xl font-bold mb-4">Campus Creator Championship</h3>
-              <p className="text-sm md:text-base text-muted-foreground/90 leading-relaxed">
-                To be updated soon.
-              </p>
-            </div>
+            
 
            
           </div>
