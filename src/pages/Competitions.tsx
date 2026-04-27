@@ -14,6 +14,73 @@ const CompetitionsPage = () => {
 
   return (
     <Layout>
+      {/* Winners Section */}
+      <section className="relative pt-12 md:pt-16 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-8 md:mb-10">
+            <p className="text-xs sm:text-sm tracking-[0.2em] text-primary uppercase mb-2">Final Results</p>
+            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold mb-3">Winners Announcement</h2>
+            <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
+              Latest verified results from competition tracks.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-1 gap-6">
+            <div className="glass rounded-2xl p-6 border border-primary/30 bg-gradient-to-br from-primary/10 to-background/60">
+              <h3 className="font-heading text-xl md:text-2xl font-bold mb-4 text-primary">Case X Case Study Competition</h3>
+              <p className="text-sm md:text-base text-muted-foreground/90 leading-relaxed mb-4">
+  The results of the <span className="font-medium">Case X Case Study Competition</span> conducted at the 
+  <span className="font-medium"> Indian Institute of Engineering Science and Technology (IIEST), Shibpur</span> 
+  have been officially finalized after a thorough and multi-stage evaluation of all submissions.
+</p>
+
+<p className="text-sm md:text-base text-muted-foreground/90 leading-relaxed mb-2 font-medium">
+  🏆 Winners:
+</p>
+
+<ul className="text-sm md:text-base text-muted-foreground/90 leading-relaxed mb-4 list-disc pl-5 space-y-1">
+  <li><span className="font-medium">1st Position:</span> Case Crew & Brief Boss</li>
+  <li><span className="font-medium">2nd Position:</span> Quattro & Dominators</li>
+</ul>
+
+<p className="text-sm md:text-base text-muted-foreground/90 leading-relaxed mb-4">
+  These teams stood out for their exceptional analytical depth, structured problem-solving approach, 
+  and strategic clarity in a highly competitive pool of participants.
+</p>
+
+<p className="text-sm md:text-base text-muted-foreground/90 leading-relaxed mb-4">
+  All winning teams are requested to send a <span className="font-medium">formal acknowledgement email</span> to 
+  <span className="font-medium"> iiests.edc@gmail.com</span> to confirm receipt of the results. 
+  This is a mandatory step to proceed with the next phase of the post-competition process and to ensure 
+  accurate communication with each team.
+</p>
+
+<p className="text-sm md:text-base text-muted-foreground/90 leading-relaxed">
+  Further details regarding the submission of bank account details and the prize distribution process 
+  will be communicated shortly. Prize disbursement is currently subject to standard administrative and 
+  official clearance procedures. We congratulate all participants for their outstanding efforts.
+</p>
+            </div>
+
+            <div className="glass rounded-2xl p-6 border border-border/40 bg-gradient-to-br from-background/80 to-background/40">
+              <h3 className="font-heading text-xl md:text-2xl font-bold mb-4">Vibe Build Hackathon</h3>
+              <p className="text-sm md:text-base text-muted-foreground/90 leading-relaxed">
+                To be updated soon.
+              </p>
+            </div>
+
+            <div className="glass rounded-2xl p-6 border border-border/40 bg-gradient-to-br from-background/80 to-background/40">
+              <h3 className="font-heading text-xl md:text-2xl font-bold mb-4">Campus Creator Championship</h3>
+              <p className="text-sm md:text-base text-muted-foreground/90 leading-relaxed">
+                To be updated soon.
+              </p>
+            </div>
+
+           
+          </div>
+        </div>
+      </section>
+
       {/* Hero Banner */}
       <section className="relative min-h-[600px] flex items-center overflow-hidden">
         <ParticleCanvas />
