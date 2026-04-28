@@ -19,7 +19,7 @@ const CompetitionsPage = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-8 md:mb-10">
             <p className="text-xs sm:text-sm tracking-[0.2em] text-primary uppercase mb-2">Final Results</p>
-            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold mb-3">Winners Announcement</h2>
+            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold mb-3">Winners</h2>
             <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
               Latest verified results from competition tracks.
             </p>
@@ -107,10 +107,33 @@ const CompetitionsPage = () => {
 </div>
 
             <div className="glass rounded-2xl p-6 border border-border/40 bg-gradient-to-br from-background/80 to-background/40">
-              <h3 className="font-heading text-xl md:text-2xl font-bold mb-4">Vibe Build Hackathon</h3>
-              <p className="text-sm md:text-base text-muted-foreground/90 leading-relaxed">
-                To be updated soon.
+              <h3 className="font-heading text-xl md:text-2xl font-bold mb-2 text-primary">Vibe Build Hackathon</h3>
+
+              <p className="text-xs md:text-sm text-muted-foreground/70 mb-3">
+                Indian Institute of Engineering Science and Technology (IIEST), Shibpur · Scintillations'26
               </p>
+
+              <p className="text-xs md:text-sm text-muted-foreground/70 mb-4">Updated On: Apr 29, 2026</p>
+
+              <p className="font-medium text-sm md:text-base mb-2">🏆 Final Results</p>
+
+              <ul className="text-sm md:text-base text-muted-foreground/90 leading-relaxed mb-3 list-disc pl-5 space-y-1">
+                <li>
+                  <span className="font-medium">1st Position :</span> Team Sahitya — Sanket Sahitya; Team Scammers — Harshit Maurya
+                </li>
+                <li>
+                  <span className="font-medium">2nd Position :</span> 2023csb107.Yasharth — Yasharth Shukla; Anushreekhoudhary — Anushree Choudhary
+                </li>
+              </ul>
+
+              <p className="text-sm md:text-base text-muted-foreground/90 leading-relaxed">
+                Congratulations to all teams. All winners are requested to send a formal acknowledgement email to
+                <span className="font-medium"> iiests.edc@gmail.com</span> to confirm receipt of the results and to proceed with prize disbursement.
+              </p>
+                <p className="text-sm md:text-base text-muted-foreground/90 leading-relaxed">
+       Further details regarding the submission of bank account details and the prize distribution process will be communicated shortly. Prize disbursement is currently subject to standard administrative and official clearance procedures. We congratulate all participants for their outstanding efforts.
+    </p>
+
             </div>
 
             
